@@ -2,7 +2,11 @@
 
 Chrome extension to transpose guitar chords to Solfege!
 
-![Alt Text](https://www.dropbox.com/s/gzpldwejvpfrvsj/UG2%20to%20solfege.gif)
+![Alt Text](https://media.giphy.com/media/dk2JTfeNICyHJmseiZ/giphy.gif)
+
+
+
+![Alt Text](https://media.giphy.com/media/5ornuAoIxepT3aZikU/giphy.gif)
 
 
 [Direct Download]()
