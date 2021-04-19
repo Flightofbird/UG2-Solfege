@@ -2,20 +2,19 @@
   "name": "UG2 Solfege",
   "description": "Transposes All Chords on ultimate-guitar to Solfege.",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "permissions": ["activeTab"],
-  "background": {
-    "scripts": ["background.js"]
-  },
   "content_scripts": [
     {
-      "matches": ["*://*.ultimate-guitar.com/*", "http://*/*", "https://*/*"],
-      "js": ["content_script.js"],
-      "run_at": "document_idle"
+      "matches": ["https://tabs.ultimate-guitar.com/*"],
+      "js": ["content_script.js"]
     }
   ],
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html"
   },
-  "icons": { "48": "Guitar-icon48.png", "128": "Guitar-icon128.png" }
+  "icons": {
+    "48": "Guitar-icon48.png",
+    "128": "Guitar-icon128.png"
+  }
 }
