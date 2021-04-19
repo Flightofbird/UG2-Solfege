@@ -1,6 +1,9 @@
-# [UG2 Solfege]()
+[UG2 Solfege]()
 
 Chrome extension to transpose guitar chords to Solfege!
+
+![Alt Text](https://www.dropbox.com/s/gzpldwejvpfrvsj/UG2%20to%20solfege.gif)
+
 
 [Direct Download]()
 
