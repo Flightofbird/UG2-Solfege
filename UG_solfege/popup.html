@@ -2,21 +2,20 @@
 <html>
   <head>
     <style>
-      body {
-        height: 180px;
-        width: 220px;
+      HTML * {
+        color: #ddc;
       }
-      div.cptext {
-        padding: 10px;
-        text-align: center;
+      body {
+        width: 260px;
+        background-color: #151517;
       }
       .wrapper {
         text-align: center;
         padding: 10px;
       }
       #Solfege {
-        background-color: #2196f3;
-        color: white;
+        background-color: #ffc401;
+        color: #151517;
         padding: 15px 25px;
         text-align: center;
         text-decoration: none;
@@ -30,17 +29,18 @@
         box-shadow: 0 9px #999;
       }
       #Solfege:hover {
-        background-color: #1c72b9;
+        background-color: #bb9002;
       }
       #Solfege:active {
-        background-color: #175e97;
+        background-color: #7c630f;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
       /* The switch - the box around the slider */
       .switch {
         position: relative;
-        display: inline-block;
+        /* display: inline-block; */
+        float: left;
         width: 60px;
         height: 34px;
       }
@@ -60,7 +60,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
+        background-color: rgb(156, 156, 156);
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
@@ -72,17 +72,17 @@
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        background-color: #ddc;
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
 
       input:checked + .slider {
-        background-color: #2196f3;
+        background-color: #ffc401;
       }
 
       input:focus + .slider {
-        box-shadow: 0 0 1px #2196f3;
+        box-shadow: 0 0 1px #ffc401;
       }
 
       input:checked + .slider:before {
@@ -99,25 +99,49 @@
       .slider.round:before {
         border-radius: 50%;
       }
+      .switch3 {
+        float: left;
+        width: 29.33%;
+        margin: 1%;
+        padding: 1%;
+      }
+      .switch3text {
+        float: left;
+        width: 29.33%;
+        margin: 1%;
+        padding: 1%;
+        padding-top: 11px;
+      }
+      #switchwrapper {
+        padding-bottom: 42px;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <button id="Solfege">C > Do Solfege</button>
-    </div>
-    <div class="cptext">
-      <a>Convert Chords to Solfege on UG. Refresh page to Reset</a>
+      <button id="Solfege">Solfegeize</button>
     </div>
     <div class="wrapper">
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
-    </div>
-    <div class="cptext">
       <a
-        >Toggle Switch, To select type of Solfege. It will be released in the
-        next version</a
+        >Convert Chords to Solfege on UG.<br />
+        Refresh page to Reset</a
+      >
+    </div>
+    <div id="switchwrapper">
+      <div class="switch3text"><a>Fixed Do = C</a></div>
+      <div class="switch3">
+        <label class="switch">
+          <input id="diCheck" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="switch3text"><a>Movable Do</a></div>
+    </div>
+    <div class="wrapper">
+      <a
+        >Toggle Switch To Select Movable Do.<br />
+        The Key will be Determend from the webpage next to the Tuning. If no key
+        is found C will be used.</a
       >
     </div>
     <script type="text/javascript" src="popup.js"></script>
