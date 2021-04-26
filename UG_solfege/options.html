@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension Options</title>
+    <style>
+      body {
+        height: 200px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    Type of Solfege:
+    <select id="fegeType">
+      <option value="sol1">
+        Do Do# Reb Re Re# Mib Mi Fa Fa# Solb Sol Sol# Lab La La# Sib Si
+      </option>
+      <option value="sol2">
+        Do Di Ra Re Ri Me Mi Fa Fi Se So Si Le La Li Se Si
+      </option>
+      <option value="sol3">
+        Do Do# Reb Re Re# Mib Mi Fa Fa# Solb Sol Sol# Lab La La# Tib Ti
+      </option>
+      <option value="sol4">
+        Do Di Ra Re Ri Me Mi Fa Fi Se So Si Le La Li Te Ti
+      </option>
+    </select>
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>
