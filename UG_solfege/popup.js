@@ -10,6 +10,7 @@ function runSwitchjs() {
     };
     console.log("Payload", payload);
     chrome.tabs.sendMessage(activeTab.id, { payload });
+    document.getElementById("Solfege").disabled = true;
   });
 }
 

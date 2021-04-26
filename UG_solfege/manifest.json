@@ -3,6 +3,7 @@
   "description": "Transposes All Chords on ultimate-guitar to Solfege.",
   "version": "1.0",
   "manifest_version": 3,
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["https://tabs.ultimate-guitar.com/*"],
@@ -11,6 +12,10 @@
   ],
   "action": {
     "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
   },
   "icons": {
     "48": "Guitar-icon48.png",
