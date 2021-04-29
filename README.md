@@ -8,16 +8,12 @@ Chrome extension to transpose guitar chords to Solfege!
 
 Because there is no way to transpose chords to Solfage on Ultimate Guitar so I made a Chrome extention to do it with the press of a button!
 
-This was also a good first project for a Chrome extension.
+This was also a good first project for a Chrome extension. Im welcome to any suggestion to improve the code.
 
 ## Installation
 
-It still needs a few bug corrections but it works for the most part, you can load it as an unpacked package if you want to use it.
+You can install it from the Chrome Web Store at this link
 
-Chrome > chrome://extensions/ > Import UG2_Solfege
+[Download](https://chrome.google.com/webstore/detail/ug2-solfege/nnedmefcdcmmeddlhmfbnpbnlmdlecgo)
 
-Or
-
-In Chrome, click the 3 Dots/Settings > More tools > Extensions. Drag UG2_Solfege.crx into the page that appears.
-
-Pin the extention so you can click the icon while on UG.
+Or load the folder as an unpacked extenssion if you want to make changes.
