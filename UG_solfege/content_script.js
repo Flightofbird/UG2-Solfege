@@ -172,19 +172,25 @@ function chordSelector() {
 //finds key by looping through the 4 divs where the key is located, Retruns the key, if not returns C
 function keyFinder() {
   let allKeyDivSelect = document.querySelectorAll("div._3naMH");
-  for (let i = 0; i < allKeyDivSelect.length; i++) {
-    let item = allKeyDivSelect[i];
-    let itemtext = item.childNodes[0].textContent;
-    // console.log(itemtext);
-    if (itemtext.includes("Key:")) {
-      console.log(
-        `${i} Div, Key = ${allKeyDivSelect[i].childNodes[1].textContent}`
-      );
-      return allKeyDivSelect[i].childNodes[1].textContent;
-    }
-    if (i === 4) {
-      console.log("Could't find key, Returning C");
-      return "C";
+  if (allKeyDivSelect.length === 0) {
+    //need to Fix issue with not finding the key, this code will default to C
+    console.log("Key Not Found, Using C");
+    return "C";
+  } else {
+    for (let i = 0; i < allKeyDivSelect.length; i++) {
+      let item = allKeyDivSelect[i];
+      let itemtext = item.childNodes[0].textContent;
+      // console.log(itemtext);
+      if (itemtext.includes("Key:")) {
+        console.log(
+          `${i} Div, Key = ${allKeyDivSelect[i].childNodes[1].textContent}`
+        );
+        return allKeyDivSelect[i].childNodes[1].textContent;
+      }
+      if (i === 4) {
+        console.log("Could't find key, Returning C");
+        return "C";
+      }
     }
   }
 }

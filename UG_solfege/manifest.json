@@ -1,7 +1,7 @@
 {
   "name": "UG2 Solfege",
   "description": "Transposes All Chords on ultimate-guitar to Solfege.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": ["storage"],
   "content_scripts": [
